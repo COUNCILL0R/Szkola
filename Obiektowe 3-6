@@ -1,0 +1,29 @@
+namespace Zad6
+{
+    internal class Program
+    {
+        static void Obliczenie()
+        {
+            Console.WriteLine("Dane jest wyrażenie x2 - 2x + 8 = 0, czyli a = 1, b = -2, c = 8");
+            double a = 1;
+            double b = -2;
+            double c = -8;
+
+            double delta = Math.Pow(b, 2) - 4 * a * c;
+
+            double pierwastek = Math.Sqrt(delta);
+
+            Console.WriteLine($"Pierwastek z Delty to : {pierwastek}");
+
+            double x1 = (b - pierwastek) / 2 * a;
+            double x2 = (b + pierwastek) / 2 * a;
+
+            Console.WriteLine($"Pierwszy pierwastek : {x1} , drugi pierwastek : {x2}");
+        }
+        
+        static void Main(string[] args)
+        {
+           Obliczenie();
+        }
+    }
+}
