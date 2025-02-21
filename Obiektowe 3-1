@@ -22,10 +22,8 @@ namespace Zad1
             Console.WriteLine("Podaj swój wiek : ");
             Wiek = Convert.ToInt16(Console.ReadLine());
 
-            ///Stworzenie łańcucha używjąc String.Format
-            string Dane = string.Format("{0} {1} {2}",Imie, Nazwisko, Wiek);
             ///Wyświetlamy informacje
-            Console.WriteLine(Dane);
+            Console.WriteLine($"Imię : {Imie}, Nazwisko : {Nazwisko}, Wiek : {Wiek}");
         }
     }
 }
