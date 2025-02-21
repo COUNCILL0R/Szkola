@@ -1,0 +1,42 @@
+namespace Zad3
+{
+    internal class Program
+    {
+        static void Egzamin()
+        {
+            Console.WriteLine("Skala ocen: \n90-100 : 5\n80-89 : 4\n70-79 : 3\n60-69 : 2\n0-59 : 1");
+            Console.Write("Podaj wynik egzaminu : ");
+            int wynik = int.Parse(Console.ReadLine());
+
+            if (wynik >= 0 & wynik <= 59)
+            {
+                Console.WriteLine("Ocena z egzaminu : 1");
+            }
+            else if (wynik >= 60 & wynik <= 69)
+            {
+                Console.WriteLine("Ocena z egzaminu : 2");
+            }
+            else if (wynik >= 70 & wynik <= 79)
+            {
+                Console.WriteLine("Ocena z egzaminu : 3");
+            }
+            else if (wynik >= 80 & wynik <= 89)
+            {
+                Console.WriteLine("Ocena z egzaminu : 4");
+            }
+            else if (wynik >= 90 & wynik <= 100)
+            {
+                Console.WriteLine("Ocena z egzaminu : 5");
+            }
+            else
+            {
+                Console.WriteLine("Podany wynik nie jest możliwy");
+            }
+
+        }
+        static void Main(string[] args)
+        {
+            Egzamin();
+        }
+    }
+}
