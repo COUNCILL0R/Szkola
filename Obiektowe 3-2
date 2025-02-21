@@ -1,0 +1,29 @@
+using System;
+
+namespace Interpolacja
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string Imie;
+            string Nazwisko;
+            int Wiek;
+
+            ///Pobieramy imie
+            Console.WriteLine("Podaj swoje imię : ");
+            Imie = Console.ReadLine();
+
+            ///Pobieramy nazwisko
+            Console.WriteLine("Podaj swoje nazwisko : ");
+            Nazwisko = Console.ReadLine();
+
+            ///Pobieramy wiek
+            Console.WriteLine("Podaj swój wiek : ");
+            Wiek = Convert.ToInt16(Console.ReadLine());
+
+            ///Wyświetlamy informacje
+            Console.WriteLine($"Imię : {Imie}, Nazwisko : {Nazwisko}, Wiek : {Wiek}");
+        }
+    }
+}
