@@ -1,0 +1,24 @@
+namespace Zad4
+{
+    internal class Program
+    {
+        static void CzyPierwsza()
+        {
+            Console.Write("Podaj liczbę : ");
+            int Liczba = int.Parse(Console.ReadLine());
+
+            if (Liczba % 2 == 0)
+            {
+                Console.WriteLine("Liczba jest parzysta");
+            }
+            else
+            {
+                Console.WriteLine("Liczba nie jest parzysta");
+            }
+        }
+            static void Main(string[] args)
+            {
+                CzyPierwsza();
+            }
+        }
+    }
