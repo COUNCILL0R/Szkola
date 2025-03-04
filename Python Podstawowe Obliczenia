@@ -1,0 +1,11 @@
+print("Autor : Sebastian Banach 2GPM")
+print("Cel programu : Program przyjmuje dwie liczby całkowite, pokazuje wyniki podstawowych obliczeń tych liczb.")
+a_SB = int(input("Podaj całkowitą liczbę a: "))
+b_SB = int(input("Podaj całkowitą liczbę b: "))
+
+print("Suma liczb: ", a_SB + b_SB)
+print("Różnica liczb: ", a_SB - b_SB)
+print("Iloczyn liczb: ", a_SB * b_SB)
+print("Iloraz liczb: ", a_SB / b_SB)
+
+input("\n\nNaciśnij Enter aby zakończyć")
