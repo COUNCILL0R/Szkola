@@ -1,0 +1,18 @@
+#1 Wyświetlanie napisów - Apostrofy lub cudzysłowia
+print('Python dla początkujących')
+print("2gpm Sebastian Banach informatyka")
+#2 Napisy wielowierszowe - Potrójne apostrofy '''...''' lub potrójny cudzysłowy """...""".
+print('''To zadanie pisze Sebastian Banach
+i ma ono
+wiele
+linii''')
+#3 Kod przejściowe do nowej linii \n
+print('Sebastian Banach potrafi przenosić tekst \n do \nnowej linii.')
+print('\n')
+print('Widzisz teraz Sebastian jak \n to działa?')
+#4 Napisy możesz pisać wielokrotnie używając symbolu mnożenia *
+print(7*'Sebstian')
+print(7*'Banach \n')
+#5 Kilka napisów oddzielamy przecinkami ,
+print("Sebastian","Banach","posiada","psa","który","ma","3*4","lat")
+input('\n\nNaciśnij Enter aby zakończyć')
