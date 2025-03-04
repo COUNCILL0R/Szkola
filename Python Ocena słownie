@@ -1,0 +1,20 @@
+print("Autor : Sebastian Banach 2GPM")
+print("Cel programu : Program przyjmuje ocene szkolną 1-6, wyświetla jej zapis słowny oraz w wypadku podania niepoprawnej wartości wyświetla komunikat.")
+ocena_SB = int(input("Podaj ocenę od 1 do 6: "))
+
+if ocena_SB == 1:
+    print("Otrzymałeś ocenę niedostateczną")
+elif ocena_SB == 2:
+    print("Otrzymałeś ocenę dopuszczającą")
+elif ocena_SB == 3:
+    print("Otrzymałeś ocenę dostateczną")
+elif ocena_SB == 4:
+    print("Otrzymałeś ocenę dobrą")
+elif ocena_SB == 5:
+    print("Otrzymałeś ocenę bardzo dobrą")
+elif ocena_SB == 6:
+    print("Otrzymałeś ocenę celującą")
+else:
+    print("Podana ocena jest nieprawidłowa")
+    
+input("\n\nNaciśnij Enter aby zakończyć")
