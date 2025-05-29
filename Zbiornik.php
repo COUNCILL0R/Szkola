@@ -9,7 +9,7 @@
         class Zbiornik
         {
             private $woda;
-            private $pojemnosc = 200;
+            private $pojemnosc;
 
             public function __construct($wod, $poj)
             {
@@ -18,13 +18,9 @@
             }
             function DolejWody($ile)
             {
-                if ($ile > $this->pojemnosc)
+                if ($this->woda + $ile > $this->pojemnosc)
                 {
-                    echo "Nie można dolać tyle wody! " . $ile . "L wody prekracza ". $this->pojemnosc . "L pojemnośći zbiornika!" . "<br>";
-                }
-                else if ($this->pojemnosc == $this->pojemnosc)
-                {
-                    
+                    echo "Nie można dolać tyle wody! " . $ile . "L wody przeleje się za zbiornik!" . "<br>";
                 }
                 else 
                 {
@@ -33,9 +29,9 @@
             }
             function WylejWode($ile)
             {
-                if ($ile > $this->woda)
+                if ($this->woda < $ile)
                 {
-                    echo "Nie ma tyle wody w zbiorniku!" . "<br>";
+                    echo "Nie można wylać tyle wody!" . "<br>";
                 }
                 else
                 {
@@ -49,13 +45,11 @@
         }
         $zbiornik200l = new Zbiornik(50, 200);
         $zbiornik200l->AktualnyStanWody();
-        $zbiornik200l->DolejWody(100);
-        $zbiornik200l->AktualnyStanWody();
+        $zbiornik200l->WylejWode(50);
         $zbiornik200l->WylejWode(50);
         $zbiornik200l->AktualnyStanWody();
-        $zbiornik200l->DolejWody(100);
-        $zbiornik200l->AktualnyStanWody();
-        $zbiornik200l->DolejWody(100);
+        $zbiornik200l->DolejWody(200);
+        $zbiornik200l->DolejWody(20);
         $zbiornik200l->AktualnyStanWody();
     ?>
 </body>
